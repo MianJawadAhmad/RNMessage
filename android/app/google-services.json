@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "455356705218",
+    "firebase_url": "https://rnmessage-b8bbf.firebaseio.com",
+    "project_id": "rnmessage-b8bbf",
+    "storage_bucket": "rnmessage-b8bbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455356705218:android:328294686daea177f68e5b",
+        "android_client_info": {
+          "package_name": "com.encoderbytes.part1mcq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "455356705218-23upb9n5sd7kqjo2jcbtuqqo9dlp7vth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAomnmfya1gfxu4q4nq03915BPJjdlgp28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "455356705218-23upb9n5sd7kqjo2jcbtuqqo9dlp7vth.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "455356705218-l6na6hig55sr5hmobosatc2sig6o87ib.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.encoderbytes.part1mcq"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
