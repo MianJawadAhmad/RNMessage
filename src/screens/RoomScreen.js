@@ -5,7 +5,7 @@ import {
   Send,
   SystemMessage
 } from 'react-native-gifted-chat';
-import { ActivityIndicator, View, StyleSheet } from 'react-native';
+import { ActivityIndicator, View, StyleSheet,TouchableOpacity,Image } from 'react-native';
 import { IconButton } from 'react-native-paper';
 import { AuthContext } from '../navigation/AuthProvider';
 import firestore from '@react-native-firebase/firestore';
@@ -113,7 +113,8 @@ export default function RoomScreen({ route }) {
     return (
       <Send {...props}>
         <View style={styles.sendingContainer}>
-          <IconButton icon='send-circle' size={32} color='#6646ee' />
+          {/* <IconButton icon='send-circle' size={32} color='#6646ee' /> */}
+            <Image style={{height:25,width:30,tintColor:'#6646ee'}} source={require('../assets/46076.png')}/>
         </View>
       </Send>
     );
@@ -122,7 +123,7 @@ export default function RoomScreen({ route }) {
   function scrollToBottomComponent() {
     return (
       <View style={styles.bottomComponentContainer}>
-        <IconButton icon='chevron-double-down' size={36} color='#6646ee' />
+        {/* <IconButton icon='chevron-double-down' size={36} color='#6646ee' /> */}
       </View>
     );
   }

@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet,Image,TouchableOpacity } from 'react-native';
 import { Title, IconButton } from 'react-native-paper';
 import FormInput from '../components/FormInput';
 import FormButton from '../components/FormButton';
@@ -32,13 +32,16 @@ export default function SignupScreen({ navigation }) {
         labelStyle={styles.loginButtonLabel}
         onPress={() => register(email, password)}
       />
-      <IconButton
+      <TouchableOpacity onPress={() => navigation.goBack()}>
+        <Image style={{ height: 30, width: 40, tintColor: '#6646ee' }} source={require('../assets/22823.png')} />
+      </TouchableOpacity>
+      {/* <IconButton
         icon='keyboard-backspace'
         size={30}
         style={styles.navButton}
         color='#6646ee'
         onPress={() => navigation.goBack()}
-      />
+      /> */}
     </View>
   );
 }

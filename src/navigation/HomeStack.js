@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Alert } from 'react-native';
+import { Alert,TouchableOpacity,Image } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { IconButton } from 'react-native-paper';
 import HomeScreen from '../screens/HomeScreen';
@@ -34,20 +34,26 @@ function ChatApp() {
         component={HomeScreen}
         options={({ navigation }) => ({
           headerRight: () => (
-            <IconButton
-              icon='message-plus'
-              size={28}
-              color='#ffffff'
-              onPress={() => navigation.navigate('AddRoom')}
-            />
+            <TouchableOpacity onPress={() => navigation.navigate('AddRoom')}>
+              <Image style={{height:30,width:40, tintColor:'#ffffff'}} source={require('../assets/meeage.png')}/>
+            </TouchableOpacity>
+            // <IconButton
+            //   icon='message-plus'
+            //   size={28}
+            //   color='#ffffff'
+            //   onPress={() => navigation.navigate('AddRoom')}
+            // />
           ),
           headerLeft: () => (
-            <IconButton
-              icon='logout-variant'
-              size={28}
-              color='#ffffff'
-              onPress={() => logout()}
-            />
+            <TouchableOpacity  onPress={() => logout()}>
+            <Image style={{height:30,width:40, tintColor:'#ffffff'}} source={require('../assets/logout.png')}/>
+          </TouchableOpacity>
+            // <IconButton
+            //   icon='logout-variant'
+            //   size={28}
+            //   color='#ffffff'
+            //   onPress={() => logout()}
+            // />
           )
         })}
       />

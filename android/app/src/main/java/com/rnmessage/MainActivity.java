@@ -1,4 +1,4 @@
-package com.rnmessage;
+package com.encoderbytes.part1mcq;
 
 import com.facebook.react.ReactActivity;
 
